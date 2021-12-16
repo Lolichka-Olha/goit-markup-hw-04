@@ -321,6 +321,35 @@ ul {
   line-height: 1.19;
 }
 
+/* card social  */
+
+.card-social-list {
+  display: flex;
+  padding: 0 32px;
+}
+
+.card-social-item + .card-social-item {
+  margin-left: 10px;
+}
+
+.card-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+
+  background: var(--primary-color);
+  color: var(--social-client-color);
+  fill: currentColor;
+  border-radius: 50%;
+}
+
+.card-social-link:hover,
+.card-social-link:focus {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
 /* client */
 
 .client-list {
