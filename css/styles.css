@@ -9,6 +9,7 @@
   --social-client-color: #afb1b8;
   --footer-bg-color: #2f303a;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --footer-social-bg-color: rgba(255, 255, 255, 0.1);
   --border-header-color: #ececec;
   --border-gallery-color: #eeeeee;
   --card-gallery-gap: 30px;
@@ -314,6 +315,8 @@ ul {
 }
 
 .card-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
 }
@@ -352,16 +355,22 @@ ul {
 
 /* footer  */
 
-.page-footer {
+.footer {
   background-color: var(--footer-bg-color);
   padding: 60px 0;
 }
+
+.footer-inner {
+  display: flex;
+}
+
+/* residence */
 
 .residence {
   width: 231px;
 }
 
-.page-footer .logo {
+.footer .logo {
   display: block;
   padding: 0;
   margin: 0 0 20px;
@@ -387,6 +396,50 @@ ul {
 .residence-item > .residence-link:hover,
 .residence-item > .residence-link:focus {
   color: var(--accent-color);
+}
+
+/* social */
+
+.social {
+  width: 206px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+.social-text {
+  margin-bottom: 20px;
+
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+
+  background: var(--footer-social-bg-color);
+  color: var(--primary-color);
+  fill: currentColor;
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: var(--accent-color);
 }
 
 /* Оформление для portfolio.html */
